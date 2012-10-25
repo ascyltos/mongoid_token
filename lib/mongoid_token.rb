@@ -49,10 +49,6 @@ module Mongoid
       end
     end
 
-    def to_param
-      self.send(@token_field_name.to_sym)
-    end
-
     protected
 
     def resolve_token_collisions
