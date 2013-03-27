@@ -19,6 +19,7 @@ module Mongoid
         #if options[:key]
         #  self.key options[:field_name].to_sym
         #end
+        #lol
 
         set_callback(:create, :before) do |document|
           document.create_token(options[:length], options[:contains])
